@@ -1,0 +1,70 @@
+@import "./base.css";
+
+/* When you have your own fonts inside your project, you need to define them using this */
+/* @font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(../fonts/Inter-Bold.ttf);
+} */
+
+.home .main__heading {
+    font-size: 128px;
+    font-weight: bold;
+}
+
+.home .main__sub-heading {
+    font-size: 40px;
+}
+
+.home .menu path {
+    fill: var(--color-text-on-primary);
+}
+
+.home .close path {
+    fill: var(--color-text-on-primary);
+}
+
+
+.button-container {
+    display: flex;
+    margin-top: 100px;
+}
+
+.button:not(button:last-of-type) {
+    margin-inline-end: 20px;
+}
+
+.button__icon {
+    vertical-align: middle;
+}
+
+@media (max-width: 1220px) {
+    .home .main__heading {
+        font-size: 70px;
+    }
+
+    .button__icon {
+        width: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .button-container {
+        margin-top: 32px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 590px) {
+    .home .main__heading {
+        font-size: 40px;
+    }
+
+    .home .main__sub-heading {
+        font-size: 24px;
+    }
+}
